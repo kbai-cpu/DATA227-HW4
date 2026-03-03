@@ -44,17 +44,12 @@ st.altair_chart(q1_chart & q2_chart, use_container_width=True)
 st.divider()
 
 # Question 3 
-st.header("3 — Home Truths: Where the Fortress Holds and Where It Doesn't")
+st.header("3 — Home Advantage: Where It Holds and Where It Weakens")
 st.markdown("""
-Not every stadium is a fortress. For some clubs, home fixtures are near-guarantees — opponents
-wilt under crowd noise, familiar turf, and the psychological weight of expectation. For others,
-the home–away split barely registers; they are just as formidable on the road.
+Home advantage is not uniform across clubs. For some, home fixtures consistently yield stronger results, suggesting that factors such as crowd support, familiarity with the environment, and contextual pressures meaningfully influence performance. For others, the difference between home and away outcomes is minimal, indicating a more stable level of performance across settings.
 
-The scatter plot below makes this structural divide visible at a glance: **teams above the
-diagonal earn more points at home than away**. Use the interval brush to select a cluster of
-teams, and watch the grouped bar chart below update to show exactly how large — or surprisingly
-small — each club's home advantage is, with both seasons shown side by side so you can judge
-whether the gap widened, narrowed, or held steady.
+The scatter plot below shows home points on the x-axis and away points on the y-axis, with each point representing a team’s performance in one season. The diagonal line represents parity between home and away points; teams above the line perform better away than at home, while those below it benefit more from home advantage. You can drag a brush to select a cluster of teams and see how their home advantage is distributed in the bar chart below the scatterplot.
+
 """)
 
 st.altair_chart(chart_home_advantage(q3_pivot), use_container_width=True)
