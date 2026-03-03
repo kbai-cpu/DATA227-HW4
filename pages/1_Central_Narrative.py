@@ -27,7 +27,9 @@ consistency chart below.
 
 q1_chart, team_select = chart_team_performance(team_summary_long)
 
-# Question 2 
+st.altair_chart(q1_chart, use_container_width=True)
+
+# Question 2
 st.header("2 — Pulse Check: How Consistent Is a Team's Attack Within a Season?")
 st.markdown("""
 A single brilliant result can flatter any side. What separates genuine contenders from
