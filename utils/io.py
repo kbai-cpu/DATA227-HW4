@@ -5,8 +5,8 @@ from vega_datasets import data
 
 @st.cache_data
 def load_pl_data() -> tuple:
-    season_2324 = pd.read_csv('/Users/kbai/Downloads/PL-season-2324.csv')
-    season_2425 = pd.read_csv('/Users/kbai/Downloads/PL-season-2425.csv')
+    season_2324 = pd.read_csv('data/PL-season-2324.csv')
+    season_2425 = pd.read_csv('data/PL-season-2425.csv')
     season_2324['Season'] = '2023-24'
     season_2425['Season'] = '2024-25'
 
