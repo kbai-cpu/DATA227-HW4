@@ -26,12 +26,11 @@ st.markdown("""
 
 st.write(
     "This project investigates Premier League performance across the **2023–24** and **2024–25** "
-    "seasons through three interconnected lenses: how team fortunes shifted between campaigns, "
-    "how reliably clubs could manufacture attacking threat from one week to the next, and — "
-    "at the centre of it all — whether the home crowd remains a genuine competitive weapon. "
+    "seasons through three different perspectives: how team fortunes shifted between campaigns, "
+    "how reliably teams can generate attacking threat from week to week, and — at the heart of it all — whether the home crowd still provides a real competitive edge."
     "Navigate the pages in the sidebar to explore the full story:\n"
-    "- **Central Narrative** (this page): A guided, chart-driven story answering each of the three analytical questions.\n"
-    "- **Exploration**: An open-ended interactive dashboard for reader-driven discovery.\n"
+    "- **Central Narrative**: A guided, chart-driven story answering each of the three analytical questions.\n"
+    "- **Exploration**: An open-ended interactive dashboard for reader-driven analysis.\n"
     "- **Methodology**: Key details about the data and the limits of our analysis.\n"
 )
 
