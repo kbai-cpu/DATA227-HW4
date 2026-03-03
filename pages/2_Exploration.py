@@ -17,12 +17,7 @@ team_summary_long, team_attack_long, q3_pivot = load_pl_data()
 
 st.title("Interactive Exploration")
 st.write(
-    "The full dashboard below combines all three analytical views into one unified, "
-    "reader-driven interface. Every interaction is connected: clicking a team in the "
-    "season comparison at the top filters the attacking consistency panels in the middle, "
-    "while the interval brush in the home/away scatter plot at the bottom independently "
-    "updates the home advantage bar chart. Use the guided prompts below to structure your "
-    "exploration, or simply follow your own curiosity."
+    "The full dashboard brings all three views together in one place. You can follow the prompts below to guide your analysis, or simply explore the patterns on your own."
 )
 
 st.markdown("**How to interact:**")
