@@ -20,8 +20,8 @@ st.header("1 — The Shifting Table: How Did Team Performance Change Between Sea
 st.markdown("""
 The 2023–24 season was defined by a historic near-miss. Arsenal’s 89-point total would have secured the Premier League title in most seasons, yet it proved insufficient in this competitive context. One year later, the competitive landscape had shifted. Certain clubs consolidated their positions, while others relinquished advantages that had taken multiple seasons to build.
 
-Use the **Metric** dropdown to switch between points, wins, and goal difference. Each measure offers a distinct perspective on performance — points capture the ultimate outcome, wins reflect consistency in securing results, and goal difference reveals underlying dominance or vulnerability.
-**Click any line to highlight a single team** and carry that selection into the attacking
+The Metric dropdown allows you to switch between points, wins, and goal difference. Each measure offers a distinct perspective on performance: points capture the ultimate outcome, wins reflect consistency in securing results, and goal difference reveals underlying dominance or vulnerability.
+Click any line to highlight a single team and carry that selection into the attacking
 consistency chart below.
 """)
 
@@ -30,16 +30,10 @@ q1_chart, team_select = chart_team_performance(team_summary_long)
 st.altair_chart(q1_chart, use_container_width=True)
 
 # Question 2
-st.header("2 — Pulse Check: How Consistent Is a Team's Attack Within a Season?")
+st.header("2 — How Consistent Is a Team's Attack Within a Season?")
 st.markdown("""
-A single brilliant result can flatter any side. What separates genuine contenders from
-flattering pretenders is the capacity to manufacture danger and goals week after week —
-regardless of opponent, venue, or circumstance.
-
-The rolling-average lines below smooth out the noise of individual results and expose the
-underlying rhythm of each team's attack across both seasons, split into side-by-side panels.
-**Select a team in the chart above** to filter both season panels here simultaneously, then
-toggle the **Attacking Metric** dropdown to compare goals, total shots, and shots on target.
+A single standout performance can make any team look stronger than it truly is. What distinguishes genuine contenders is the ability to consistently create chances and score goals from week to week regardless of opponent, venue, or circumstance.
+The rolling averages below smooth out the volatility of individual matches, revealing the underlying pattern of each team’s attacking output across both seasons in side-by-side panels. You can select a team in the chart above to filter both panels simultaneously, and use the Attacking Metric dropdown to compare goals, total shots, and shots on target.
 """)
 
 q2_chart = chart_attacking_consistency(team_attack_long, team_select)
