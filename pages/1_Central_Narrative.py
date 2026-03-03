@@ -33,6 +33,7 @@ st.altair_chart(q1_chart, use_container_width=True)
 st.header("2 — How Consistent Is a Team's Attack Within a Season?")
 st.markdown("""
 A single standout performance can make any team look stronger than it truly is. What distinguishes genuine contenders is the ability to consistently create chances and score goals from week to week regardless of opponent, venue, or circumstance.
+
 The rolling averages below smooth out the volatility of individual matches, revealing the underlying pattern of each team’s attacking output across both seasons in side-by-side panels. You can select a team in the chart above to filter both panels simultaneously, and use the Attacking Metric dropdown to compare goals, total shots, and shots on target.
 """)
 
