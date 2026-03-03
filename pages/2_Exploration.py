@@ -20,18 +20,6 @@ st.write(
     "The full dashboard brings all three views together in one place. You can follow the prompts below to guide your analysis, or simply explore the patterns on your own."
 )
 
-st.markdown("**How to interact:**")
-st.write(
-    "- **Metric dropdown** (top chart): switch between Points, Wins, and Goal Difference "
-    "to view season-over-season performance through different lenses.\n"
-    "- **Click a line** (top chart): highlight a single team and see only that team's "
-    "3-match rolling attack averages in the panels below it.\n"
-    "- **Attacking Metric dropdown** (middle chart): toggle between Goals, Shots, and "
-    "Shots on Target to probe different dimensions of attacking output.\n"
-    "- **Drag a brush** (bottom scatter): select a cluster of teams by their home vs. away "
-    "points to reveal how home advantage is distributed within that group across both seasons."
-)
-
 st.markdown("**Guided prompts:**")
 st.write(
     "- Which teams sit furthest above the diagonal in the scatter plot — and does their "
