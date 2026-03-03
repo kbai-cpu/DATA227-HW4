@@ -15,23 +15,19 @@ alt.themes.enable("project")
 
 team_summary_long, team_attack_long, q3_pivot = load_pl_data()
 
-# ── Question 1 ───────────────────────────────────────────────────────────────
-st.header("1 — The Shifting Table: How Did Teams Change Between Seasons?")
+# Question 1 
+st.header("1 — The Shifting Table: How Did Team Performance Change Between Seasons?")
 st.markdown("""
-The 2023–24 season was one of historic near-misses. Arsenal's 89-point campaign would have
-won the title in almost any other year of the Premier League era — yet it still fell short.
-One season later, the landscape had reorganised. Some clubs tightened their grip; others
-surrendered ground they had spent years accumulating.
+The 2023–24 season was defined by a historic near-miss. Arsenal’s 89-point total would have secured the Premier League title in most seasons, yet it proved insufficient in this competitive context. One year later, the competitive landscape had shifted. Certain clubs consolidated their positions, while others relinquished advantages that had taken multiple seasons to build.
 
-Use the **Metric** dropdown to switch between points, wins, and goal difference. Each lens
-surfaces a slightly different truth about who genuinely improved and who merely clung on.
+Use the **Metric** dropdown to switch between points, wins, and goal difference. Each measure offers a distinct perspective on performance — points capture the ultimate outcome, wins reflect consistency in securing results, and goal difference reveals underlying dominance or vulnerability.
 **Click any line to highlight a single team** and carry that selection into the attacking
 consistency chart below.
 """)
 
 q1_chart, team_select = chart_team_performance(team_summary_long)
 
-# ── Question 2 ───────────────────────────────────────────────────────────────
+# Question 2 
 st.header("2 — Pulse Check: How Consistent Is a Team's Attack Within a Season?")
 st.markdown("""
 A single brilliant result can flatter any side. What separates genuine contenders from
@@ -50,7 +46,7 @@ st.altair_chart(q1_chart & q2_chart, use_container_width=True)
 
 st.divider()
 
-# ── Question 3 ───────────────────────────────────────────────────────────────
+# Question 3 
 st.header("3 — Home Truths: Where the Fortress Holds and Where It Doesn't")
 st.markdown("""
 Not every stadium is a fortress. For some clubs, home fixtures are near-guarantees — opponents
