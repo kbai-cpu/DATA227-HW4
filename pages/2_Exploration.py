@@ -25,8 +25,7 @@ st.write(
     "- Which teams sit furthest above the diagonal in the scatter plot showing Home vs Away performance, and does their "
     "home advantage hold across both seasons or only one?\n"
     "- Among the top four teams in the seasonal performance comparison: does their attacking rolling average stay flat and consistent, or does it show mid-season dips?\n"
-    "- Are there teams whose goal difference tells a different story than their points tally?\n"
-    "- Do the teams with the highest home advantage also tend to struggle the most while away, or do some clubs manage to be strong in both settings?\n"
+    "- Are there teams whose goal difference tells a different story than their points tally? In other words, are there teams that are more dominant in terms of goal difference but less successful in terms of points?\n"
 )
 
 st.divider()
