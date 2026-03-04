@@ -22,14 +22,11 @@ st.write(
 
 st.markdown("**Guided prompts:**")
 st.write(
-    "- Which teams sit furthest above the diagonal in the scatter plot — and does their "
+    "- Which teams sit furthest above the diagonal in the scatter plot showing Home vs Away performance, and does their "
     "home advantage hold across both seasons or only one?\n"
-    "- Click a top-four team in the season comparison: does their attacking rolling average "
-    "stay flat and consistent, or does it show mid-season dips?\n"
-    "- Switch the metric to Goal Difference and compare it against Points — are there teams "
-    "whose goal difference tells a sharply different story than their points tally?\n"
-    "- Brush only the teams with high away points in the scatter: do those clubs also show "
-    "lower home advantage in the bar chart, suggesting they are equally strong everywhere?"
+    "- Among the top four teams in the seasonal performance comparison: does their attacking rolling average stay flat and consistent, or does it show mid-season dips?\n"
+    "- Are there teams whose goal difference tells a different story than their points tally?\n"
+    "- Do the teams with the highest home advantage also tend to struggle the most while away, or do some clubs manage to be strong in both settings?\n"
 )
 
 st.divider()

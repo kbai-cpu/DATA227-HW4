@@ -31,10 +31,9 @@ st.altair_chart(q1_chart, use_container_width=True)
 
 st.markdown("""
 **Key takeaways:**
-- Arsenal's 15-point drop (89 → 74) was the steepest decline among established top clubs, but switching the metric to Goal Difference tells an even starker story — their +62 margin in 2023–24 fell to +35 in 2024–25, suggesting the underlying erosion was greater than the headline points figure implies.
-- Several mid-table clubs showed the largest upward trajectories: Brentford gained 17 points and Brighton gained 13 between seasons, pointing to improving squads rather than top-heavy variance.
-- Goal Difference frequently reveals a sharper picture of team quality than points alone. A side can hold its points total through narrow wins while quietly conceding more — a warning sign that the raw table obscures.
-- The field compressed noticeably in 2024–25, with more clubs clustering in the mid-50s points range, suggesting the gap between the top and the rest narrowed compared to the prior season.
+- Arsenal’s drop from 89 points to 74 was the sharpest decline among the established top clubs. But when you switch to goal difference, their +62 in 2023–24 dropped to +35 in 2024–25, making their fall look more pronounced.
+- Several mid-table teams moved in the opposite direction. Brentford improved by 17 points and Brighton by 13
+- Overall, the 2024–25 season appears just slightly more compressed, with more clubs clustered around the mid-50s in points. The gap between the top and the rest seems to have narrowed compared to the previous year.
 """)
 
 # Question 2
@@ -51,10 +50,8 @@ st.altair_chart(q1_chart & q2_chart, use_container_width=True)
 
 st.markdown("""
 **Key takeaways:**
-- Even top attacking sides show significant week-to-week volatility in the rolling averages — truly flat, sustained output is rare, and most teams exhibit clear peaks and troughs within a single season.
-- Toggling from Goals to Shots exposes finishing efficiency. A team running a high shot rolling average alongside a low goals average is generating chances but not converting them — a pattern that often foreshadows a correction in results.
-- Comparing the same metric across the two season panels reveals whether a team's attacking improvement or decline was real: clubs that genuinely strengthened tend to show a higher rolling average floor in 2024–25, meaning even their worst three-match stretches produced more than comparable low points in 2023–24.
-- Mid-season dips in the rolling average are common across the board, likely reflecting fixture congestion, injuries, and form slumps — the smoothed line makes these structural dips visible where raw match-by-match data would obscure them.
+- Even the strongest attacking teams show significant week-to-week volatility in the rolling averages. Truly flat, sustained output is rare, and most teams exhibit clear peaks and troughs within a single season.
+- Consistent mid-season dips across many teams likely reflect fixture congestion, injuries, or short-term drops in form. The rolling average makes these broader patterns visible while smoothing out the noise of individual matches. 
 """)
 
 st.divider()
@@ -62,7 +59,7 @@ st.divider()
 # Question 3 
 st.header("3 — Home Advantage: Where It Holds and Where It Weakens")
 st.markdown("""
-Home advantage is not uniform across clubs. For some, home fixtures consistently yield stronger results, suggesting that factors such as crowd support, familiarity with the environment, and contextual pressures meaningfully influence performance. For others, the difference between home and away outcomes is minimal, indicating a more stable level of performance across settings.
+Home advantage is not uniform across clubs. For some, home games consistently yield stronger results, suggesting that factors such as crowd support, familiarity with the environment, and contextual factors meaningfully influence performance. For others, the difference between home and away outcomes is minimal, indicating a more stable level of performance across venues.
 
 The scatter plot below shows home points on the x-axis and away points on the y-axis, with each point representing a team’s performance in one season. The diagonal line represents parity between home and away points; teams above the line perform better away than at home, while those below it benefit more from home advantage. You can drag a brush to select a cluster of teams and see how their home advantage is distributed in the bar chart below the scatterplot.
 
@@ -72,9 +69,10 @@ st.altair_chart(chart_home_advantage(q3_pivot), use_container_width=True)
 
 st.markdown("""
 **Key takeaways:**
-- The majority of teams cluster above the diagonal, confirming that home advantage is real and widespread across the Premier League — accumulating points on the road is structurally harder for most clubs.
-- Arsenal stand out as a clear outlier: with a home advantage of just 4–5 points across both seasons, they perform nearly as well away as at home, a hallmark of genuine elite-level consistency rather than fortress dependence.
-- Aston Villa register one of the largest home advantages in the dataset — 12 points in 2023–24 and 14 in 2024–25 — and crucially, the gap grew rather than shrank between seasons, suggesting Villa Park is a durable structural asset, not a one-year anomaly.
-- The side-by-side bars for each team reveal that home advantage is largely stable across both seasons for most clubs. Where it is consistent, it is likely organisational — rooted in crowd atmosphere, familiarity, and travel burden on opponents — rather than a product of luck or scheduling.
+- The majority of teams cluster above the diagonal, confirming that home advantage is real and widespread across the Premier League. For the majority of clubs, scoring points away from home is simply harder. 
+- Teams like Arsenal, Brentford, and Man United are notable exceptions. Their home advantages are only about 4–6 points in both seasons, meaning they perform almost as well on the road as they do at home.
+- Aston Villa, on the other hand, show one of the largest home–away gaps: 12 points in 2023–24 and 14 in 2024–25. Moreover, their home advantage appears to have strengthened in the second season, suggesting that their home ground is a key driver of their overall performance.
+- Some teams (Brighton, Newcastle, Liverpool) had sharp dips in home advantage from 2023–24 to 2024–25, while others (Man City) had a notable increase. These shifts suggest that home advantage is not a fixed trait for any given club, but can fluctuate based on changes in squad, tactics, or other contextual factors.
+- Many teams (Aston Villa, Chelsea, Man United, Brentford, Arsenal) show fairly stable home advantage across the two seasons. If this pattern holds in the long run, it suggests that home advantage is a structural feature of certain clubs rather than a transient phenomenon.
 """)
 
