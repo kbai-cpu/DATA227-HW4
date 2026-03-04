@@ -32,7 +32,7 @@ st.altair_chart(q1_chart, use_container_width=True)
 st.markdown("""
 **Key takeaways:**
 - Arsenal’s drop from 89 points to 74 was the sharpest decline among the established top clubs. But when you switch to goal difference, their +62 in 2023–24 dropped to +35 in 2024–25, making their fall look more pronounced.
-- Several mid-table teams moved in the opposite direction. Brentford improved by 17 points and Brighton by 13
+- Several mid-table teams moved in the opposite direction. Brentford improved by 17 points and Brighton by 13.
 - Overall, the 2024–25 season appears just slightly more compressed, with more clubs clustered around the mid-50s in points. The gap between the top and the rest seems to have narrowed compared to the previous year.
 """)
 
